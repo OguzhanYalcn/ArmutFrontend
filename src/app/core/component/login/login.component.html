@@ -1,0 +1,14 @@
+<div class="container-fluid">
+    <form [formGroup]="loginForm" (submit)="submit()">
+        <div class="mb-3">
+            <label for="txtEmail" class="form-label">Email address</label>
+            <input formControlName="email" type="email" class="form-control" id="txtEmail" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="txtPassword" class="form-label">Password</label>
+            <input formControlName="password" type="text" class="form-control" id="txtPassword" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <button type="button" class="btn btn-primary ms-3" (click)="signup()">Sign Up</button>
+    </form>
+</div>
